@@ -107,6 +107,7 @@ public class MainActivity_11131415 extends AppCompatActivity implements MyAdapte
 			int lastIndex = listData.size() - 1;
 			listData.remove(lastIndex); // pop end of item
 			adapter.notifyItemRemoved(lastIndex); // update RecyclerView
+
 		}
 	}
 }
