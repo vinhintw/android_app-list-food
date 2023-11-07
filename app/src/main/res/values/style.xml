@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- styles.xml -->
+<!-- styles.xml -->
+<resources>
+    <!-- Kiểu chung cho ứng dụng -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Các màu chủ đạo -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Định nghĩa kiểu cho AppBarOverlay -->
+    <style name="AppTheme.AppBarOverlay">
+        <!-- Các thuộc tính cụ thể cho AppBarOverlay -->
+    </style>
+</resources>
+
+
