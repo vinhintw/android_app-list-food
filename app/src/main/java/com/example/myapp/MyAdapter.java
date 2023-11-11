@@ -1,5 +1,7 @@
 package com.example.myapp;
 
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,11 +41,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 		{
 			@Override
 			public void onClick(View view) {
-				Toast.makeText(view.getContext(), "CLick on item" +item.getText(), Toast.LENGTH_LONG).show();
+				//openSecondActivity();
+				Intent intent = new Intent(view.getContext(), SecondActivity.class);
+				intent.putExtra("book_name", (String)item.getText());
+				// Mở SecondActivity
+				view.getContext().startActivity(intent);
+				Toast.makeText(view.getContext(), "CLick " +item.getText(), Toast.LENGTH_LONG).show();
 			}
 		});
-	}
 
+	}
 
 	@Override
 	public int getItemCount() {
@@ -58,6 +65,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 			imageViewItem = itemView.findViewById(R.id.imageView); // Sử dụng ID img từ list_item.xml
 			textViewItem = itemView.findViewById(R.id.textView);
 			relativeLayout = itemView.findViewById(R.id.relativeLayout);
+			itemView.setOnClickListener(this);
 		}
 
 		@Override

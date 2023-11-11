@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.Button;
@@ -90,6 +92,14 @@ public class MainActivity_11131415 extends AppCompatActivity implements MyAdapte
 		ListData item = getmListData().get(position);
 		getmListData().get(position).setText("clicked");
 
+	}
+	public void onClick(View view) {
+		openSecondActivity();
+	}
+	public void openSecondActivity(){
+		Intent intent = new Intent(this, SecondActivity.class);
+
+		startActivity(intent);
 	}
 
 	public void insertItem() {
