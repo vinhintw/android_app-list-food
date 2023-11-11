@@ -20,16 +20,17 @@ public class MainActivity_11131415 extends AppCompatActivity implements MyAdapte
 	Button deleteButton;
 	Toolbar toolbar;
 	private int[] allDrawables = new int[]{
-			R.drawable.hotpot,
-			R.drawable.diet,
-			R.drawable.bibimbap,
-			R.drawable.dish,
-			R.drawable.donut,
-			R.drawable.fastfood,
-			R.drawable.masaladosa,
-			R.drawable.pancakes,
-			R.drawable.ramen,
-			R.drawable.roastedchicken
+			R.drawable.book1,
+			R.drawable.book2,
+			R.drawable.book3,
+			R.drawable.book4,
+			R.drawable.book5,
+			R.drawable.book6,
+			R.drawable.book7,
+			R.drawable.book8,
+			R.drawable.book9,
+			R.drawable.book10,
+			R.drawable.book11
 	};
 
 	@Override
@@ -70,18 +71,17 @@ public class MainActivity_11131415 extends AppCompatActivity implements MyAdapte
 
 	public ArrayList<ListData> getmListData(){
 		ArrayList<ListData> mlist = new ArrayList<>();
-		mlist.add(new ListData("hot pot", R.drawable.hotpot));
-		mlist.add(new ListData("diet", R.drawable.diet));
-		mlist.add(new ListData("bibimbap", R.drawable.bibimbap ));
-		mlist.add(new ListData("dish", R.drawable.dish ));
-		mlist.add(new ListData("fast food", R.drawable.fastfood ));
-		mlist.add(new ListData("donut", R.drawable.donut ));
-		mlist.add(new ListData("masaladosa", R.drawable.masaladosa ));
-		mlist.add(new ListData("masaladosa", R.drawable.masaladosa ));
-		mlist.add(new ListData("roastedchicken", R.drawable.roastedchicken ));
-		mlist.add(new ListData("pancakes", R.drawable.pancakes ));
-		mlist.add(new ListData("ramen", R.drawable.ramen ));
-		mlist.add(new ListData("salad", R.drawable.salad ));
+		mlist.add(new ListData("book 1", R.drawable.book1));
+		mlist.add(new ListData("book 2", R.drawable.book2));
+		mlist.add(new ListData("book 3", R.drawable.book3 ));
+		mlist.add(new ListData("book 4", R.drawable.book4 ));
+		mlist.add(new ListData("book 5", R.drawable.book5 ));
+		mlist.add(new ListData("book 6", R.drawable.book6 ));
+		mlist.add(new ListData("book 7", R.drawable.book7 ));
+		mlist.add(new ListData("book 8", R.drawable.book8 ));
+		mlist.add(new ListData("book 9", R.drawable.book9 ));
+		mlist.add(new ListData("book 10", R.drawable.book10 ));
+		mlist.add(new ListData("book 11", R.drawable.book11 ));
 		return mlist;
 	}
 
